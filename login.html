@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/logo_pink.png">
+
+    <title>Cadastre-se agora na Cafeteria Lumigo</title>
+</head>
+<body>
+    <div class="login-body">
+        <div class="login-container">
+            <div class="login-content-2">
+                <img width="80%" src="img/dec-login.png">
+            </div>
+
+            <form class="login-content-1" name="form" action="home.html" onsubmit="return validacao(this)">
+                <img class="login-logo" src="img/logo_black.png">
+                <img class="login-img" src="img/dec-login.png">
+
+                <h1 class="tit">login</h1>
+
+                <div class="row-100">
+                    <div class="div_nome">
+                        <input type="text" name="inputNome" id="inputNome" placeholder="Usuário" required onkeydown="return only_letter(event)">
+                    </div>
+                </div>
+
+                <div class="row-100">
+                    <div class="div_senha">
+                        <input type="password" name="inputSenha" id="inputSenha" placeholder="Escolha sua senha" required oninput="senha()">
+                        <img id="senhaonoff" src="img/dec-senhaoff.png" onclick="eyeClick()">
+                    </div>
+                </div>
+
+                <input type="submit" value="Cadastrar" class="btn">
+                <div class="login-link">
+                    <a style="text-align: left; font-size: 13px; text-decoration: none;" href="home.html">Clique para voltar</a>
+                    <a style="text-align: left; font-size: 13px; text-decoration: none;" href="cadastro.html">Não tenho Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

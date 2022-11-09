@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/logo_pink.png">
+    
+    <title>Confira nossos produtos!</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="img/logo_black.png">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav> <!-- NAVEGAÇÃO -->
+        </header> <!-- CABEÇALHO -->
+
+        <main id="inicio">
+            <img class="dec-1 animate__animated animate__fadeInTopLeft wow" src="img/tela-1_back-1.png">
+            <img class="copo" src="img/copolumigo.png">
+            <img class="dec-2 animate__animated animate__fadeInBottomRight wow" src="img/tela-1_back-2.png"> 
+
+            <a href="#cardapio"><img class="dec-3" src="img/dec_vetor.png"></a>
+            <h1 class="titulo">Conheça nossos<br>produtos!</h1>
+        </main> <!-- MAIN -->
+
+        <section id="cardapio">
+            <div class="produtos-content">
+                <div class="produto">
+                    <button id="btn1" onclick="showHideDiv1()">
+                        <div class="menu"></div>
+                        Expresso
+                    </button> <!-- BOTAO DO PRODUTO -->
+
+                    <div id="aba1" class="abas">
+                        <div class="grid-content">
+                            <div class="content">
+                                <img src="img/c_expresso_filtrado.jpg">
+
+                                <div class="info">
+                                    <h1>Café Filtrado</h1>
+                                    <p>Preparado no método tradicional: Filtro de papel</p>
+                                </div>
+                            </div> <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_expresso_macchiato.jpg">
+                                
+                                <div class="info">
+                                    <h1>Expresso Tradicional ou Macchiato</h1>
+                                    <p>Expresso tradicional ou com espuma de leite</p>
+                                </div>
+                            </div> <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_expresso_chantilly.jpg">
+                                
+                                <div class="info">
+                                    <h1>Expresso com chantilly</h1>
+                                    <p>Expresso Tradicional com um toque de chantilly</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+                        </div> <!-- GRID CONTENT -->
+                    </div>
+                    <hr>
+                </div>  <!-- PRIMEIRA ABA PRODUTO -->
+
+                <div class="produto">
+                    <button id="btn2" onclick="showHideDiv2()">
+                        <div class="menu"></div>
+                        Cafés
+                    </button> <!-- BOTAO DO PRODUTO -->
+
+                    <div id="aba2" class="abas">
+                        <div class="grid-content">
+                            <div class="content">
+                                <img src="img/c_cafe_americano.jpg">
+                                
+                                <div class="info">
+                                    <h1>Café Americano</h1>
+                                    <p>Expresso suavizado com água quente</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_cafe_leite.jpg">
+                                
+                                <div class="info">
+                                    <h1>Café com Leite</h1>
+                                    <p>Café preparado em filtro de papel com leite vaporizado</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_prensa_francesa.jpg">
+                                
+                                <div class="info">
+                                    <h1>Prensa Francesa</h1>
+                                    <p>Método de preparo que preserva a oleosidade, realçando o sabor do café. Perfeito para degustar com amigos</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+                        </div> <!-- GRID CONTENT -->
+                    </div>
+                    <hr>
+                </div>  <!-- SEGUNDA ABA PRODUTO -->
+
+                <div class="produto">
+                    <button id="btn3" onclick="showHideDiv3()">
+                        <div class="menu"></div>
+                        Clássicos
+                    </button> <!-- BOTAO DO PRODUTO -->
+
+                    <div id="aba3" class="abas">
+                        <div class="grid-content">
+                            <div class="content">
+                                <img src="img/c_cafe_latte.jpg">
+                                
+                                <div class="info">
+                                    <h1>Café Latte</h1>
+                                    <p>Expresso, leite vaporizado e espuma de leite</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_doce_leite.jpg">
+                                
+                                <div class="info">
+                                    <h1>Doce de Leite Latte</h1>
+                                    <p>Leite vaporizado com calda de doce de leite, expresso, finalizado com chantilly e calda de caramelo</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_cafe_caramelo.jpg">
+                                
+                                <div class="info">
+                                    <h1>Caramelo Macchiato</h1>
+                                    <p>Leite vaporizado, um toque de baunilha, dose de expresso e cobertura de caramelo</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_cappuccino.jpg">
+                                
+                                <div class="info">
+                                    <h1>cappuccino Tradicional</h1>
+                                    <p>Expresso com leite cremoso</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+                        </div> <!-- GRID CONTENT -->
+                    </div>
+                    <hr>
+                </div>  <!-- TERCEIRA ABA PRODUTO -->
+
+                <div class="produto">
+                    <button id="btn4" onclick="showHideDiv4()">
+                        <div class="menu"></div>
+                        Sorvetes
+                    </button> <!-- BOTAO DO PRODUTO -->
+
+                    <div id="aba4" class="abas">
+                        <div class="grid-content">
+                            <div class="content">
+                                <img src="img/c_casquinha.jpg">
+                                
+                                <div class="info">
+                                    <h1>Casquinha</h1>
+                                    <p>Tradicional sorvete de casquinha com diversos sabores</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_sorvete_pote.jpg">
+                                
+                                <div class="info">
+                                    <h1>Sorvete no Pote</h1>
+                                    <p>Sorvete no pote com adicionais deliciosos</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_milkshake.jpg">
+                                
+                                <div class="info">
+                                    <h1>Milkshake</h1>
+                                    <p>Tradicional Milkshake de diversos sabores e com vários adicionais</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+                        </div> <!-- GRID CONTENT -->
+                    </div>
+                    <hr>
+                </div> <!-- QUARTA ABA PRODUTO -->
+
+                <div class="produto">
+                    <button id="btn5" onclick="showHideDiv5()">
+                        <div class="menu"></div>
+                        Doces
+                    </button> <!-- BOTAO DO PRODUTO -->
+
+                    <div id="aba5" class="abas">
+                        <div class="grid-content">
+                            <div class="content">
+                                <img src="img/c_cupcake.jpg">
+                                
+                                <div class="info">
+                                    <h1>Cupcake</h1>
+                                    <p>Mini bolinhos recheados e deliciosos com diversos sabores para agradar a todos os paladares</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_donuts.jpg">
+                                
+                                <div class="info">
+                                    <h1>Donuts</h1>
+                                    <p>Rosquinha com uma cobertura doce com variedade de sabor</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+
+                            <div class="content">
+                                <img src="img/c_lolipop.jpg">
+                                
+                                <div class="info">
+                                    <h1>Lolipop</h1>
+                                    <p>Pirulitos saborosos e extremamente lindos, com o formato que você desejar</p>
+                                </div>
+                            </div>  <!-- PRODUTO -->
+                        </div> <!-- GRID CONTENT -->
+                    </div> <!-- ABAS -->
+                    <hr>
+                </div> <!-- QUINTA ABA PRODUTO -->
+            </div> <!-- PRODUTOS CONTENT -->
+        </section> <!-- CARDAPIO -->
+
+        <footer id="contato">
+            <hr>
+            <div class="flex-content">
+                <div class="content">
+                    <img class="logo" src="img/logo_pink.png">
+                </div> <!-- CONTEUDO -->
+
+                <div class="content">
+                    <h1 class="titulo">Fale Conosco</h1>
+
+                    <a href=""><img class="icon" src="img/icon_support.png">(21) 4002-8922</a>
+                    <a href=""><img class="icon" src="img/icon_message.png">lumigo.eteot@gmail.com</a>
+                </div> <!-- CONTEUDO -->
+
+                <div class="content">
+                    <h1 class="titulo">Menu</h1>
+
+                    <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="#cardapio">Cardapio</a></li>
+                        <li><a href="home.html#sobre">Sobre</a></li>
+                    </ul>
+                </div><!-- CONTEUDO -->
+
+                <div class="content">
+                    <h1 class="titulo">Redes Sociais</h1>
+                    
+                    <a href=""><img class="icon" src="img/icon_twitter.svg">/LumigoCafeteria</a>
+                    <a href=""><img class="icon" src="img/icon_instagram.svg">@LumigoCafeteria</a>
+                    <a href=""><img class="icon" src="img/icon_facebook.svg">/LumigoCafeteria</a>
+                </div> <!-- CONTEUDO -->
+            </div> <!-- FLEX CONTENT -->
+
+            <div class="copyright">
+                <p>Copyright&copy; Lumigo Cafeteria</p>
+            </div> <!-- COPYRIGHT -->
+        </footer> <!-- RODAPÉ -->
+    </div>
+    </div>
+
+    <script defer src="js/script.js"></script>
+</body>
+</html>

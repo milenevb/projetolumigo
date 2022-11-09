@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/logo_pink.png">
+    
+    <title>Cafeteria Lumigo</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="img/logo_black.png">
+            <nav>
+                <ul>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav> <!-- NAVEGAÇÃO -->
+        </header> <!-- CABEÇALHO -->
+
+        <main id="inicio">
+            <img class="dec-1 animate__animated animate__fadeInTopLeft wow" src="img/tela-1_back-1.png">
+            <img class="copo" src="img/img_copo.png">
+            <img class="dec-2 animate__animated animate__fadeInBottomRight wow" src="img/tela-1_back-2.png"> 
+
+            <h1 class="titulo">Sua Bebida em<br>Um Clique <img class="dec" src="img/img_mouse.png"></h1>
+        </main> <!-- PRIMEIRA TELA-->
+
+        <section id="sobre">
+            <div class="tela-2">
+                <img class="dec" src="img/tela-2_back.png">
+                <img class="cafe" src="img/img_cafe.png">
+
+                <h1 class="titulo">Conheça<br>nossos cafés.</h1>
+                <h1 class="composicao">Independente de seu gosto,<br>teremos um<span style="color:#6B4216" > café perfeito </span><br>para você.</h1>
+            </div> <!-- SEGUNDA TELA -->
+
+            <div class="tela-3">
+                <img class="dec animate__animated animate__fadeInBottomLeft wow" src="img/tela-3_back.png">
+                <img class="dec-ticket" src="img/dec_ticket.png">
+                <a href="login.html"><input type="button" class="button" value="Cadastre-se!"></a>
+
+                <h1 class="titulo">Cadastre-se e<br>ganhe benefícios!</h1>
+                <h1 class="composicao">Na lumigo, quem é <span style="color: #92644D">cliente</span><br> tem <span style="color:#92644D" >desconto!</span> <br><br> <span style="color:#92644D"> Cadastre-se</span> e fique por<br> dentro dos <span style="color:#92644D" >cupons semanais!</span></h1>
+            </div> <!-- TERCEIRA TELA -->
+
+            <div class="tela-4">
+                <img class="dec-1" src="img/tela-4_back-1.png">
+                <img class="dec-2" src="img/tela-4_back-2.png">
+                
+                <img class="celular" src="img/celular.png"> 
+
+                <div class="content">
+                    <h1 class="titulo">Aplicativo em produção...</h1>
+                    <h1 class="composicao">Em breve nossa <br> cafeteria na palma da <br> sua mão.</h1>
+
+                    <img class="icon" src="img/icon-applestore.png">
+                    <img class="icon" src="img/icon-playstore.png">
+                </div>
+                
+            </div> <!-- QUARTA TELA -->
+
+        </section> <!-- SECTION -->
+
+        <footer id="contato">
+            <div class="flex-content">
+                <div class="content">
+                    <img class="logo" src="img/logo_pink.png">
+                </div> <!-- CONTEUDO -->
+
+                <div class="content">
+                    <h1 class="titulo">Fale Conosco</h1>
+
+                    <a href=""><img class="icon" src="img/icon_support.png">(21) 4002-8922</a>
+                    <a href=""><img class="icon" src="img/icon_message.png">lumigo.eteot@gmail.com</a>
+                </div> <!-- CONTEUDO -->
+
+                <div class="content">
+                    <h1 class="titulo">Menu</h1>
+
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div><!-- CONTEUDO -->
+
+                <div class="content">
+                    <h1 class="titulo">Redes Sociais</h1>
+                    
+                    <a href=""><img class="icon" src="img/icon_twitter.svg">/LumigoCafeteria</a>
+                    <a href=""><img class="icon" src="img/icon_instagram.svg">@LumigoCafeteria</a>
+                    <a href=""><img class="icon" src="img/icon_facebook.svg">/LumigoCafeteria</a>
+                </div> <!-- CONTEUDO -->
+            </div> <!-- FLEX CONTENT -->
+
+            <div class="copyright">
+                <p>Copyright&copy; Lumigo Cafeteria</p>
+            </div> <!-- COPYRIGHT -->
+        </footer> <!-- RODAPÉ -->
+    </div>
+
+    <!-- JAVASCRIPT ANIMATE ON SCROLL -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW({animateClass: 'animated', offset: 100});
+        wow.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1084 @@
+/* FONTES PERSONALIZADAS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto&display=swap');
+/*  font-family: 'Bebas Neue', cursive; CONTEUDO
+    font-family: 'Pacifico', cursive; TITULOS
+    font-family: 'Roboto', sans-serif; DIVERSOS
+*/
+
+/* =================================== PRIMEIRA PÁGINA ===================================*/
+
+/* ============== RESET ============== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-pink: #FFE3F0;
+    --pink: #FF7EBB;
+
+    --background-blue: #A4E5EB;
+    --blue: #83CCD3;
+
+    --background-salmon: #FFCBB0;
+    --salmon: #EC8C8D;
+
+    --background-brown: #845E3F;
+    --brown: #DDA06F;
+}
+
+body {overflow-x: hidden; font-family: 'Roboto', sans-serif;}
+
+/* =================================== */
+
+/* ============ CONTAINER ============ */
+.container {
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "section"
+                         "footer" ;
+}
+/* =================================== */
+
+/* ============= HEADER ============== */
+header {
+    grid-area: header;
+
+    background: transparent;
+    width: 100%;
+    height: auto;
+    padding: 30px 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 110px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: var(--pink);
+}
+/* =================================== */
+
+/* =============== MAIN ============== */
+main {
+    grid-area: main;
+    
+    background: var(--background-pink);
+    width: 100%;
+    height: 100vh;
+    padding: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    position: relative;
+    z-index: 0;
+}
+
+main .dec-1 {
+    height: 45vh;
+
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    z-index: 10;
+}
+
+main .dec-2 {
+    height: 55vh;
+    
+    bottom: 0;
+    right: 0;
+
+    position: absolute;
+    z-index: 10;
+}
+
+main .copo {
+    height: 80vh;
+    transform: rotate(20deg);
+
+    top: 15%;
+    right: 5%;
+
+    position: absolute;
+    z-index: 100;
+
+    transition: .5s;
+}
+
+main .copo:hover {
+    transform: scale(1.2);
+}
+
+main .titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    letter-spacing: 4px;
+    color: #6B4216;
+    
+    position: relative;
+}
+
+main .titulo .dec {
+    width: 50%;
+
+    position: absolute;
+    left: 46.5%;
+    bottom: -20%;
+
+    transition: .3s;
+}
+
+main .titulo .dec:hover {
+    transform: scale(0.8);
+}
+/* =================================== */
+
+/* ============= SECTION ============= */
+section {
+    grid-area: section;
+
+    width: 100%;
+}
+/* =================================== */
+
+/* =========== SEGUNDA TELA ========== */
+.tela-2 {
+    background: var(--background-blue);
+    width: 100%;
+    height: 100vh;
+    padding: 0 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+.tela-2 .dec {
+    height: 55vh;
+    
+    top: 0;
+    right: 0;
+
+    position: absolute;
+    z-index: 10;
+}
+
+.tela-2 .cafe {
+    height: 90vh;
+    
+    bottom: 0;
+    left: 0;
+
+    position: absolute;
+    z-index: 10;
+}
+
+.tela-2 .titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    letter-spacing: 4px;
+    color: #6B4216;
+    line-height: 80px;
+}
+
+.tela-2 .composicao {
+    margin-top: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    color: #E4A06E;
+    letter-spacing: 2px;
+}
+/* =================================== */
+
+/* ========== TERCEIRA TELA ========== */
+.tela-3 {
+    background: var(--background-salmon);
+    width: 100%;
+    height: 100vh;
+    padding: 50px 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+.tela-3 .dec {
+    height: 75vh;
+
+    bottom: 0;
+    left: 0;
+
+    position: absolute;
+    z-index: 10;
+}
+
+.tela-3 .titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    letter-spacing: 4px;
+    color: #92644D;
+    margin-left: 10%;
+
+    position: relative;
+    z-index: 100;
+}
+
+.tela-3 .composicao {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    color: #FFCBB0;
+    
+    margin-top: 50px;
+    letter-spacing: 2px;
+
+    position: relative;
+
+    z-index: 100;
+}
+
+.tela-3 .dec-ticket {
+    height: 60vh;
+
+    top: 13%;
+    right: 5%;
+
+    position: absolute;
+    z-index: 100;
+}
+
+.tela-3 .button {
+    bottom: 10%;
+    right: 18%;
+
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e66264;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 9px 9px 0 #92644D;
+    transition: .3s;
+
+    position: absolute;
+    z-index: 1000;
+}
+  
+.tela-3 .button:hover {background-color: #e97b7d}
+  
+.tela-3 .button:active {
+    background-color: #e7696b;
+    box-shadow: 0 5px #92644D;
+    transform: translate(4px, 4px);
+  }
+/* =================================== */
+
+/* =========== QUARTA TELA =========== */
+.tela-4 {
+    background: var(--background-brown);
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    position: relative;
+    z-index: 1;
+}
+
+.tela-4 .dec-1 {
+    height: 40vh;
+
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    z-index: 10;
+}
+
+.tela-4 .dec-2 {
+    height: 50vh;
+
+    bottom: 0;
+    right: 0;
+
+    position: absolute;
+    z-index: 10;
+}
+
+.tela-4 .celular {
+    height: 100vh;
+    top: 2%;
+    left: 5%;
+
+    position: absolute;
+    z-index: 100;
+}
+
+.tela-4 .titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    color: #DDA06E;
+
+    z-index: 100;
+}
+
+.tela-4 .composicao {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    color: #FFCBB0;  
+    margin: 30px 0;
+    
+    letter-spacing: 2px;
+}
+
+.tela-4 .icon {
+    width: 48px;
+    margin-right: 15px;
+}
+/* =================================== */
+
+/* ============= FOOTER ============== */
+
+footer {
+    grid-area: footer;
+
+    background: white;
+    width: 100%;
+    height: auto;
+}
+
+footer .flex-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    margin: 50px 100px;
+}
+
+footer .logo {
+    width: 110px;
+}
+
+footer .titulo {
+    color: var(--pink);
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .icon {
+    margin-right: 5px;
+    margin-bottom: -5px;
+    width: 24px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    text-transform: uppercase;
+}
+
+footer a {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: var(--pink);
+}
+
+footer .copyright {
+    background-color: var(--pink);
+
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+/* ====================================================================================== */
+
+/* =================================== PÁGINA PRODUTOS ===================================*/
+
+main .dec-3 {
+    position: absolute;
+    left: 47%;
+    bottom: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+main .dec-3:hover {
+    transform: translateY(10px);
+}
+
+.produtos-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.produto {
+    width: 100%;
+    height: auto;
+}
+
+.produto .menu {
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
+
+    position: relative
+}
+
+.produto .menu::before {
+    content: '';
+    background-color: var(--pink);
+    border-radius: 10px;
+
+    width: 60%;
+    height: 6px;
+    top: 35%;
+    left: 0;
+    
+    transform: rotate(-135deg);
+    transition: .6s;
+
+    position: absolute;
+}
+
+.produto .menu::after {
+    content: '';
+    background-color: var(--pink);
+    border-radius: 10px;
+
+    width: 60%;
+    height: 6px;
+    top: 35%;
+    left: 30%;
+    
+    transform: rotate(135deg);
+    transition: .6s;
+
+    position: absolute;
+}
+
+button.active .menu::before {
+    transform: rotate(45deg);
+    left: 20%;
+    width: 70%;
+}
+
+button.active .menu::after {
+    transform: rotate(-45deg);
+    left: 20%;
+    width: 70%;
+}
+
+.produto button {
+    display: flex;
+    align-items: center;
+
+    background: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    font-size: 40px;
+    color: var(--pink);
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.abas {
+    padding: 20px 50px;
+
+    display: none;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-areas: "a b"
+                         "c d"
+    ;
+    gap: 50px;
+}
+
+.produto .content {
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+    gap: 30px;
+}
+
+.produto .content:nth-child(1) {
+    grid-area: a;
+}
+
+.produto .content:nth-child(2) {
+    grid-area: b;
+}
+
+.produto .content:nth-child(3) {
+    grid-area: c;
+}
+
+.produto .content:nth-child(4) {
+    grid-area: d;
+}
+
+.info h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--pink);
+}
+
+.produto .content img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.produto hr, footer hr {
+    background-color: var(--background-pink);
+    border: none;
+    border-radius: 2px;
+    
+    width: 100%;
+    height: 2px;
+}
+/* ====================================================================================== */
+
+/* ==================================== PÁGINA DE LOGIN ==================================*/
+.login-body {
+    background-image: url(../img/tela-login_back.png);
+    background-repeat: no-repeat;
+    background-position: -25%;
+    background-attachment: fixed;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+
+    z-index: 1000;
+}
+
+.login-content-1, .login-content-2 {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.login-content-1 {
+    background-color: var(--background-pink);
+    border-radius: 10px 0 0 10px;
+    max-width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    position: relative;
+}
+
+.login-logo, .login-img {
+    display: none;
+}
+
+.login-content-1 .tit {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.login-content-1 input {
+    border-radius: 30px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    transition: .3s;
+    outline: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.row-100 input {
+    width: 100%;
+}
+
+.row-50 input {
+    width: 100%;
+}
+
+.login-content-1 input#inputSenha {
+    padding-right: 40px;
+}
+
+.row-50 {
+    display: flex;
+    gap: 20px;
+}
+
+.div_senha {
+    position: relative;
+}
+
+#senhaonoff {
+    position: absolute;
+    width: 24px;
+    top: 20%;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.div_nome, .div_email, .div_senha, .div_confirm-senha {
+    transition: .3s;
+}
+
+.div_nome:hover, .div_email:hover, .div_senha:hover, .div_confirm-senha:hover {
+    transform: scale(1.1);
+}
+
+.login-content-1 .btn {
+    background-color: var(--pink);
+    color: white;
+    cursor: pointer;
+}
+
+.login-content-1 .btn:hover {
+    transform: scale(1.1);
+    background-color: #e0629d;
+}
+
+.login-content-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ====================================================================================== */
+
+/* =========== SCROLL BAR ============ */
+::-webkit-scrollbar {background: transparent; width: 5px;}
+::-webkit-scrollbar-thumb {background-color: var(--pink); border-radius: 3px;}
+/* =================================== */
+
+/* ====================================================================================== */
+
+/* ================================== RESPONSIVIDADE ==================================== */
+@media(max-width: 700px) {
+    
+    /* ============= HEADER ============== */
+    header {
+        padding: 20px 20px;
+        z-index: 1000;    
+    }
+
+    header .logo {
+        width: 100px;
+    }
+
+    /* provisorio */
+    nav {
+        display: none;
+    }
+    /* =================================== */
+
+    /* =============== MAIN ============== */
+    main {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    main .dec-1 {
+        width: 50vw;
+        height: auto;
+    }
+
+    main .dec-2 {
+        width: 65vw;
+        height: auto;
+    }
+
+    main .copo {
+        width: 50vw;
+        height: auto;
+
+        top: 60%;
+        right: 10%;
+    }
+
+    main .titulo {
+        font-size: 3em;
+        margin-top: 30vh;
+    }
+    /* =================================== */
+
+    /* =========== SEGUNDA TELA ========== */
+    .tela-2 {
+        padding: 0 20px;
+
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .tela-2 .dec {
+        width: 65vw;
+        height: auto;
+        
+        top: 0;
+        right: 0;
+
+        position: absolute;
+        z-index: 10;
+    }
+
+    .tela-2 .cafe {
+        width: 80vw;
+        height: auto;
+    }
+
+    .tela-2 .titulo {
+        font-size: 3.5em;
+        line-height: 60px;
+        margin-top: 25vh;
+    }
+
+    .tela-2 .composicao {
+        margin-top: 30px;
+        font-size: 2em;
+    }
+    /* =================================== */
+    
+    /* ========== TERCEIRA TELA ========== */
+    .tela-3 {
+        padding: 20px;
+        justify-content: flex-start;
+    }
+
+    .tela-3 .dec {
+        width: 95vw;
+        height: 50vh;
+    }
+
+    .tela-3 .titulo {
+        font-size: 2.7em;
+        margin-top: 60%;
+        margin-left: 0;
+    }
+
+    .tela-3 .composicao {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2.5em;
+        color: #FFCBB0;
+        
+
+        bottom: 5%;
+        position: absolute;
+
+        z-index: 100;
+    }
+
+    .tela-3 .dec-ticket {
+        width: 50vw;
+        height: auto;
+
+        top: 5%;
+        right: 5%;
+    }
+
+    .tela-3 .button {
+        bottom: 5%;
+        right: 20%;
+        font-size: 16px;
+    }
+    
+    .tela-3 .button:hover {background-color: #e97b7d}
+    
+    .tela-3 .button:active {
+        background-color: #e7696b;
+        box-shadow: 0 5px #92644D;
+        transform: translate(4px, 4px);
+    }
+    /* =================================== */
+
+    /* =========== QUARTA TELA =========== */
+    .tela-4 {
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tela-4 .dec-1 {
+        width: 40vw;
+        height: auto;
+    }
+
+    .tela-4 .dec-2 {
+        width: 70vw;
+        height: auto;
+    }
+
+    .tela-4 .celular {
+        width: 75vw;
+        height: auto;
+
+        top: auto;
+        bottom: 3%;
+        left: 10%;
+    }
+
+    .tela-4 .titulo {
+        font-size: 3em;
+
+        position: absolute;
+        top: 15%;
+    }
+
+    .tela-4 .composicao {
+        font-size: 2em;
+        color: #FFCBB0;  
+        margin: 0;
+        
+        letter-spacing: 2px;
+    }
+
+    .tela-4 .icon {
+        width: 36px;
+        margin-right: 10px;
+    }
+    /* =================================== */
+
+    /* ============= FOOTER ============== */
+    footer .flex-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+
+        margin: 40px;
+    }
+
+    footer .titulo {
+        font-size: 1.3em;
+    }
+
+    footer .content {
+        align-items: center;
+        gap: 5px;
+    }
+
+    footer .icon {
+        width: 20px;
+    }
+
+    footer ul {
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer a {
+        font-size: .9em;
+    }
+
+    footer .copyright {
+        font-size: 1em;
+    }
+
+    /* =================================== PÁGINA PRODUTOS ===================================*/
+
+    main .dec-3 {
+        display: none;
+    }
+
+    .produtos-content {
+        padding: 20px;
+    }
+
+    .produto button {
+        font-size: 36px;
+    }
+
+    .abas {
+        padding: 20px;
+    }
+
+    .grid-content {
+        grid-template-areas: "a" 
+                             "b"
+                             "c"
+                             "d"
+        ;
+        gap: 30px;
+    }
+
+    .produto .content {
+        height: 20vh;
+        gap: 15px;
+    }
+
+    .info h1 {
+        font-size: 1em;
+    }
+
+    .produto .content img {
+        border-radius: 8px;
+    }
+    /* ====================================================================================== */
+    
+    /* ==================================== PÁGINA DE LOGIN ==================================*/
+    .login-body {
+        background: var(--pink);
+        padding: 20px;
+    }
+
+    .login-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-content {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .login-content-1 {
+        border-radius: 10px;
+        max-width: 100%;
+    }
+
+    .login-logo {
+        position: absolute;
+        top: 10%;
+        left: 36%;
+        width: 110px;
+        display: block;
+    }
+
+    .login-content .tit {
+        font-size: 2.5em;
+    }
+
+    .login-img {
+        position: absolute;
+        bottom: 5%;
+        left: 22%;
+        width: 220px;
+        display: block;
+    }
+
+    .login-content-2 {
+        display: none;
+    }
+
+    /* ====================================================================================== */
+
+    /* =========== SCROLL BAR ============ */
+    ::-webkit-scrollbar {width: 0;}
+    ::-webkit-scrollbar-thumb {width: 0;}
+    /* =================================== */
+}
